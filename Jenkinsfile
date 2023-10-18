@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('SCM') {
+    stage('SCM CheckOut') {
       steps {
-        echo 'SCM DONE'
+        git(url: 'https://github.com/HaithamKhalifa/demo1.git', branch: 'master')
       }
     }
 
