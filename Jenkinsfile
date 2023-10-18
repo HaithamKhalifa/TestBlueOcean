@@ -3,13 +3,15 @@ pipeline {
   stages {
     stage('SCM CheckOut') {
       steps {
-        git(url: 'https://github.com/HaithamKhalifa/demo1.git', branch: 'master')
+        git(url: 'https://github.com/HaithamKhalifa/hapi-fhir-jpaserver-starter.git', branch: 'master')
       }
     }
-   stage('Bulid Image') {
+
+    stage('Bulid Image') {
       steps {
         sh 'podman build -t .'
       }
+    }
+
   }
-}
 }
