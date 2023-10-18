@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('SCM CheckOut') {
       steps {
-        git(url: 'https://github.com/HaithamKhalifa/hapi-fhir-jpaserver-starter.git', branch: 'master')
+        git(url: 'https://github.com/hapifhir/hapi-fhir-jpaserver-starter.git', branch: 'master')
       }
     }
 
