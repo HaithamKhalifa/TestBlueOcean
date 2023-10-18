@@ -9,7 +9,7 @@ pipeline {
 
     stage('Bulid Image') {
       steps {
-        sh 'podman build -t .'
+        sh 'podman build .'
       }
     }
 
