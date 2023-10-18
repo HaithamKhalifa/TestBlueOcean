@@ -5,10 +5,11 @@ pipeline {
       steps {
         git(url: 'https://github.com/HaithamKhalifa/demo1.git', branch: 'master')
       }
-    stage('Bulid Image') {
+    }
+   stage('Bulid Image') {
       steps {
         sh 'podman build -t'
       }
-    }
   }
+}
 }
